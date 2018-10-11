@@ -17,7 +17,10 @@ namespace FlipchartBasic
             flipchart.WriteNote("Fourth note");
             flipchart.ReadNotes();
             flipchart.PrintNotes();
-            flipchart.PagingPaperBlock();
+            for (int i = 0; i < 20; i++) //Test the exception
+            {
+                flipchart.PagingPaperBlock();
+            }
             flipchart.PrintNotes();
             Console.ReadKey();
         }
